@@ -72,7 +72,6 @@ public class parseXML extends DefaultHandler {
             File[] acaTexts = acaDirectory.listFiles();
             for (File f:acaTexts) {
                 if (!f.getName().startsWith(".")) {
-                    System.out.println(f.getName());
                     xmlReader.parse(f.getAbsolutePath());
                 }
             }
